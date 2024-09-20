@@ -13,6 +13,9 @@
 
 ### [**7. Test and Debug**](.)
 
+- [Test](./m-testing/)
+- [Debug](./m-debugging/)
+
 ### [**8. Software Engineering Principles**](.)
 
 ### [**9. Design Patterns**]()
