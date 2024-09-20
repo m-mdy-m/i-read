@@ -1,3 +1,24 @@
 [submodule "algorithms-data-structures"]
 	path = algorithms-data-structures
 	url = https://github.com/m-mdy-m/algorithms-data-structures.git
+[submodule "CodeNet"]
+	path = CodeNet
+	url = https://github.com/medishen/CodeNet.git
+[submodule "containerization_learning"]
+	path = containerization_learning
+	url = https://github.com/m-mdy-m/containerization_learning
+[submodule "CI-Cd-Learning"]
+	path = CI-Cd-Learning
+	url = https://github.com/m-mdy-m/CI-Cd-Learning
+[submodule "The-Labors-of-Learning"]
+	path = The-Labors-of-Learning
+	url = https://github.com/m-mdy-m/The-Labors-of-Learning
+[submodule "K-R-Cix"]
+	path = K-R-Cix
+	url = https://github.com/medishen/K-R-Cix
+[submodule "deep-dive-programming"]
+	path = deep-dive-programming
+	url = https://github.com/m-mdy-m/deep-dive-programming
+[submodule "SQL-DeepDiveLearning"]
+	path = SQL-DeepDiveLearning
+	url = https://github.com/m-mdy-m/SQL-DeepDiveLearning
