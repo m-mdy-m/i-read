@@ -1,0 +1,3 @@
+[submodule "algorithms-data-structures"]
+	path = algorithms-data-structures
+	url = https://github.com/m-mdy-m/algorithms-data-structures.git
