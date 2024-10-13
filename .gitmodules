@@ -10,9 +10,6 @@
 [submodule "CI-Cd-Learning"]
 	path = CI-Cd-Learning
 	url = https://github.com/m-mdy-m/CI-Cd-Learning
-[submodule "The-Labors-of-Learning"]
-	path = The-Labors-of-Learning
-	url = https://github.com/m-mdy-m/The-Labors-of-Learning
 [submodule "K-R-Cix"]
 	path = K-R-Cix
 	url = https://github.com/medishen/K-R-Cix
@@ -28,3 +25,9 @@
 [submodule "m-testing"]
 	path = m-testing
 	url = https://github.com/Testing-Guild/m-testing.git
+[submodule "SPathways"]
+	path = SPathways
+	url = https://github.com/m-mdy-m/SPathways.git
+[submodule "TechShelf"]
+	path = TechShelf
+	url = https://github.com/m-mdy-m/TechShelf.git
