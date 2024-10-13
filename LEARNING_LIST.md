@@ -1,4 +1,4 @@
-### [**1. Programming** (Basic Programming Concepts)](./The-Labors-of-Learning/)
+### [**1. Programming** (Basic Programming Concepts)](./SPathways/)
 
 ### [**2. Object-Oriented Programming (OOP)**]()
 
