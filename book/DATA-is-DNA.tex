@@ -249,10 +249,89 @@ To make this more concrete, consider a few more examples:
 		\item \textbf{Sixteen destinations}:  If there are 16 possible destinations, then \(n = \log_2 16 = 4\). Therefore, 4 forks (or 4 bits of information) are required to select the correct destination.
 		\item \textbf{Thirty-two destinations}: For 32 possible destinations, \(n = \log_2 32 = 5\). In this case, 5 forks are needed, corresponding to 5 bits of information.
 \end{itemize}
-These examples illustrate the general rule: the number of forks in the road corresponds directly to the number of bits of information required to navigate through the decision points. The more potential paths you have, the more bits of information are necessary to resolve the uncertainty.
+These examples illustrate the general rule: the number of forks in the road corresponds directly to the number of bits of information required to navigate through the decision points. The more potential paths you have, the more bits of information are necessary to resolve the uncertainty.\vspace{0.5cm}\\
+\textbf{Bits Are Not Binary Digits}\\
+The term "bit" originates from the words "binary digit," but it is important to understand that a \textbf{bit} and a \textbf{binary digit} represent different concepts.\\
+A \textbf{binary digit} (also known as a \textit{bit value}) is simply the value of a variable in the binary number system. This value can only be one of two possibilities: either 0 or 1. In other words, a binary digit describes a state in a binary system (like whether a light switch is off (0) or on (1)).\\
+On the other hand, a \textbf{bit of information} refers to the amount of information conveyed when we distinguish between two equally probable outcomes (0 or 1). A bit measures how much uncertainty is reduced when you learn which of two possible events actually occurred.\\
+To illustrate the difference more clearly:\\
+- A \textbf{binary digit} tells you the specific state (0 or 1), but the \textbf{bit} measures the \textit{amount of information} you gain by knowing that state.\\
+This is where the distinction lies. Confusing a binary digit with a bit is like confusing a physical container with the amount of substance it can hold. For example:\\
+- Imagine a pint-sized bottle. The bottle can hold a certain amount of liquid—up to one pint—but it can also be empty or partially filled. The amount of liquid (up to one pint) corresponds to how much it actually holds, while the bottle itself corresponds to the binary digit.\\
+Similarly:\\
+- A binary digit can take the value of 0 or 1, but the \textit{average} amount of information it conveys can range from zero to one bit, depending on the uncertainty of the outcomes. If the outcome is always certain (e.g., if you know beforehand that it will always be 0), the amount of information gained is zero. However, if both outcomes (0 or 1) are equally likely, learning the value provides one full bit of information.\\
+To summarize, the key distinction is:
+- A \textbf{binary digit} (0 or 1) represents a possible state or value in a binary system.\\
+- A \textbf{bit} represents the \textit{amount of information} you gain by knowing the outcome of a binary decision between two equally likely alternatives.\\
+\textbf{Note:} The definitions and explanations in this section are collected from various authoritative sources. Full references to these sources are provided to acknowledge the original authors. For further reading, you can access the full text at the following link: 
+\href{https://arxiv.org/pdf/1802.05968}{Information Theory: A Tutorial Introduction}
+\subsection{Quantifying Data: Bits, Bytes, and Beyond}
 
-\subsubsection{Quantifying Data: Bits, Bytes, and Beyond}
-Data, in its most basic form, can be quantified using bits (binary digits) and bytes. A bit is the smallest unit of data, representing a binary state (0 or 1), while a byte typically consists of 8 bits. This subsection explains how larger units of data, such as kilobytes (KB), megabytes (MB), gigabytes (GB), and beyond, are derived from these basic units, as well as their relevance in digital storage and communication.
+\subsubsection{Data Representation}
+
+\textbf{How is Information Represented in a Computer?}  
+Information in a computer is represented using \textit{binary digits}, commonly referred to as \textbf{bits}. A bit is the smallest unit of data in a computer and can hold a value of either 0 or 1, corresponding to two states: off or on, false or true, low or high voltage. \\
+The challenge arises when we need to represent characters, numbers, and other forms of data in a manner that can be easily understood and processed by both the computer and the user. This is where \textbf{character encoding schemes} come into play.
+A \textbf{character encoding} scheme is essentially a set of rules that translates characters (such as letters, numbers, and symbols) into a form that the computer can store and process. Some common encoding schemes include:
+\begin{itemize}
+	\item \textbf{ASCII} (American Standard Code for Information Interchange): This is a 7-bit code that represents English characters, digits, and some special symbols.
+	\item \textbf{EBCDIC} (Extended Binary Coded Decimal Interchange Code): Another character encoding used primarily in older IBM mainframes.
+	\item \textbf{ISCII} (Indian Script Code for Information Interchange): An encoding standard used for Indian scripts.
+\end{itemize}
+These codes allow computers to represent complex forms of information like text and numbers using combinations of bits.\\\\
+\textbf{How are Arithmetic Calculations Performed Through Bits?}\\\\
+For performing arithmetic calculations, computers use the binary number system. In this system, all numbers are represented as combinations of 0s and 1s (bits). Binary arithmetic (addition, subtraction, multiplication, and division) can be performed on these numbers, similar to how we perform arithmetic in the decimal system. The computer’s hardware is designed to interpret and execute these binary operations rapidly.\\\\
+\textbf{What is Data?}
+\begin{itemize}
+	\item \textbf{Data} refers to symbols or information that represent people, objects, events, ideas, etc. For example, data can be a person's name, a date, a photograph, or even the notes in a piece of music.
+	\item \textbf{Data Representation} refers to the form in which data is stored, processed, and transmitted within a computer system. It’s the way data is structured for manipulation and storage by electronic circuits.
+	\item Devices such as smartphones, iPods, and computers store data in \textit{digital formats}, which allow them to be processed and transmitted by electronic circuitry.
+\end{itemize}
+\textbf{Digitization and the Digital Revolution}\\
+Digitization is the process of converting various forms of information (such as text, numbers, images, or music) into digital data that can be stored, processed, or transmitted by electronic devices. The \textbf{Digital Revolution} refers to the era in which digital devices have proliferated, becoming smaller, faster, and more affordable, leading to their widespread adoption in everyday life.\\
+\textbf{The Binary System: 0s and 1s}
+\begin{itemize}
+	\item The binary system represents all data using only two digits: 0 and 1. These digits are called \textbf{binary digits}, or \textit{bits}.
+	\item A \textbf{bit} is the basic unit of information in computing and digital communications. It represents a value of either 0 or 1.
+	\item A \textbf{digital file} is a named collection of data stored on a physical medium such as a hard disk, CD, DVD, or flash drive. Files consist of sequences of bits.
+\end{itemize}
+\textbf{All the World’s a Bit-Pattern}\\\\
+ Each bit pattern can have different interpretations depending on its context. One bit is the smallest piece of information and can have only two states: 0 or 1. However, by combining bits into groups, we can represent more complex data. For example, a bit pattern like \texttt{01001011} could have various interpretations depending on the context:
+\begin{itemize}
+	\item As a number: it could represent the number 75 (in decimal).
+	\item As a letter: it could represent the letter ‘K’ in ASCII.
+	\item As part of a picture: it could indicate how much green is needed at a particular pixel.
+	\item As an instruction: it might be an instruction to subtract one from a register in a microcomputer.
+\end{itemize}
+Thus, the same bit pattern can mean many different things depending on how the computer and the programmer interpret it.\\\\
+\textbf{Patterns of Bits: Grouping Bits Together}\\\\
+The most compact way to represent a single bit is by writing it as either \texttt{0} or \texttt{1}. Larger data sets are represented as strings of bits, for example: \texttt{01101000} or \texttt{11010101}. These bit patterns can be of any length, and computers are typically designed to handle bits in fixed-size groups called \textbf{words}. The size of a word varies across different systems, and common word lengths are:
+\begin{itemize}
+	\item 4 bits
+	\item 8 bits (commonly called a \textbf{byte})
+	\item 16 bits
+	\item 32 bits
+	\item 64 bits
+\end{itemize}
+
+\noindent For example:
+\begin{itemize}
+	\item 8 bits = 1 byte
+	\item 16 bits = 2 bytes = 1 short (or word)
+	\item 32 bits = 4 bytes = 1 long
+\end{itemize}
+In most modern computers, data is grouped in multiples of 8 bits, but smaller systems (like microcontrollers) may use shorter word sizes, such as 4 bits (called a \textbf{nibble}). In practice, bit patterns are typically written in full bytes, even if only some of the bits are actually used.\\\\
+\textbf{How to Distinguish Binary Patterns}\\\\
+Since binary patterns can easily be confused with numbers, there are several ways to indicate that a value is in binary format. For example, the binary pattern \texttt{1101} can be written in different ways to show that it is a binary number:
+\begin{itemize}
+	\item \texttt{1101B}
+	\item \texttt{0b1101}
+	\item \texttt{1101\_2}
+	\item \%1101
+\end{itemize}
+
+In this text, I will use the \texttt{0b} prefix to indicate binary numbers whenever there is potential for confusion.
+
 
 \subsubsection{ELEMENTS OF	INFORMATION THEORY}
 
