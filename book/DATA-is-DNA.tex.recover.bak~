@@ -231,7 +231,7 @@ At this point, there are eight different possible routes you could have taken st
 \[
 8 = 2 \times 2 \times 2 = 2^3 = 8
 \]
-\paragraph{Generalizing the Relationship}
+\textbf{Generalizing the Relationship}
 We can generalize this concept as follows: let \(n\) represent the number of forks you encounter along the way, and let \(m\) represent the number of possible final destinations. If you encounter \(n\) forks, you are effectively choosing from \(m = 2^n\) final destinations. Since each fork requires one bit of information to make the correct decision, \(n\) forks correspond to \(n\) bits of information.\\
 Viewed from another perspective, if there are \(m = 8\) possible destinations, then the number of forks required to reach one of these destinations is \(n = 3\), which corresponds to the logarithm of 8, as expressed in the equation:\\
 \[n = \log_2 m\]
@@ -250,7 +250,7 @@ To make this more concrete, consider a few more examples:
 		\item \textbf{Thirty-two destinations}: For 32 possible destinations, \(n = \log_2 32 = 5\). In this case, 5 forks are needed, corresponding to 5 bits of information.
 \end{itemize}
 These examples illustrate the general rule: the number of forks in the road corresponds directly to the number of bits of information required to navigate through the decision points. The more potential paths you have, the more bits of information are necessary to resolve the uncertainty.\vspace{0.5cm}\\
-\paragraph{Bits Are Not Binary Digits}\\
+\textbf{Bits Are Not Binary Digits}\\
 The term "bit" originates from the words "binary digit," but it is important to understand that a \textbf{bit} and a \textbf{binary digit} represent different concepts.\\
 A \textbf{binary digit} (also known as a \textit{bit value}) is simply the value of a variable in the binary number system. This value can only be one of two possibilities: either 0 or 1. In other words, a binary digit describes a state in a binary system (like whether a light switch is off (0) or on (1)).\\
 On the other hand, a \textbf{bit of information} refers to the amount of information conveyed when we distinguish between two equally probable outcomes (0 or 1). A bit measures how much uncertainty is reduced when you learn which of two possible events actually occurred.\\
@@ -267,7 +267,7 @@ To summarize, the key distinction is:
 \href{https://arxiv.org/pdf/1802.05968}{Information Theory: A Tutorial Introduction}
 \subsection{Quantifying Data: Bits, Bytes, and Beyond}
 \subsubsection{Data Representation}
-\paragraph{How is Information Represented in a Computer?}  
+\textbf{How is Information Represented in a Computer?}  
 Information in a computer is represented using \textit{binary digits}, commonly referred to as \textbf{bits}. A bit is the smallest unit of data in a computer and can hold a value of either 0 or 1, corresponding to two states: off or on, false or true, low or high voltage. \\
 The challenge arises when we need to represent characters, numbers, and other forms of data in a manner that can be easily understood and processed by both the computer and the user. This is where \textbf{character encoding schemes} come into play.
 A \textbf{character encoding} scheme is essentially a set of rules that translates characters (such as letters, numbers, and symbols) into a form that the computer can store and process. Some common encoding schemes include:
@@ -276,10 +276,10 @@ A \textbf{character encoding} scheme is essentially a set of rules that translat
 	\item \textbf{EBCDIC} (Extended Binary Coded Decimal Interchange Code): Another character encoding used primarily in older IBM mainframes.
 	\item \textbf{ISCII} (Indian Script Code for Information Interchange): An encoding standard used for Indian scripts.
 \end{itemize}
-These codes allow computers to represent complex forms of information like text and numbers using combinations of bits.
-\paragraph{How are Arithmetic Calculations Performed Through Bits?}
-For performing arithmetic calculations, computers use the binary number system. In this system, all numbers are represented as combinations of 0s and 1s (bits). Binary arithmetic (addition, subtraction, multiplication, and division) can be performed on these numbers, similar to how we perform arithmetic in the decimal system. The computer’s hardware is designed to interpret and execute these binary operations rapidly.
-\paragraph{Digitization and the Digital Revolution}
+These codes allow computers to represent complex forms of information like text and numbers using combinations of bits.\\\\
+\textbf{How are Arithmetic Calculations Performed Through Bits?}\\\\
+For performing arithmetic calculations, computers use the binary number system. In this system, all numbers are represented as combinations of 0s and 1s (bits). Binary arithmetic (addition, subtraction, multiplication, and division) can be performed on these numbers, similar to how we perform arithmetic in the decimal system. The computer’s hardware is designed to interpret and execute these binary operations rapidly.\\\\
+\textbf{Digitization and the Digital Revolution}\\
 Digitization is the process of converting various forms of information (such as text, numbers, images, or music) into digital data that can be stored, processed, or transmitted by electronic devices. The \textbf{Digital Revolution} refers to the era in which digital devices have proliferated, becoming smaller, faster, and more affordable, leading to their widespread adoption in everyday life.\\
 \textbf{The Binary System: 0s and 1s}
 \begin{itemize}
@@ -287,8 +287,7 @@ Digitization is the process of converting various forms of information (such as 
 	\item A \textbf{bit} is the basic unit of information in computing and digital communications. It represents a value of either 0 or 1.
 	\item A \textbf{digital file} is a named collection of data stored on a physical medium such as a hard disk, CD, DVD, or flash drive. Files consist of sequences of bits.
 \end{itemize}
-
-\paragraph*{All the World’s a Bit-Pattern}
+\textbf{All the World’s a Bit-Pattern}\\\\
  Each bit pattern can have different interpretations depending on its context. One bit is the smallest piece of information and can have only two states: 0 or 1. However, by combining bits into groups, we can represent more complex data. For example, a bit pattern like \texttt{01001011} could have various interpretations depending on the context:
 \begin{itemize}
 	\item As a number: it could represent the number 75 (in decimal).
@@ -296,8 +295,8 @@ Digitization is the process of converting various forms of information (such as 
 	\item As part of a picture: it could indicate how much green is needed at a particular pixel.
 	\item As an instruction: it might be an instruction to subtract one from a register in a microcomputer.
 \end{itemize}
-Thus, the same bit pattern can mean many different things depending on how the computer and the programmer interpret it.
-\paragraph{Patterns of Bits: Grouping Bits Together}
+Thus, the same bit pattern can mean many different things depending on how the computer and the programmer interpret it.\\\\
+\textbf{Patterns of Bits: Grouping Bits Together}\\\\
 The most compact way to represent a single bit is by writing it as either \texttt{0} or \texttt{1}. Larger data sets are represented as strings of bits, for example: \texttt{01101000} or \texttt{11010101}. These bit patterns can be of any length, and computers are typically designed to handle bits in fixed-size groups called \textbf{words}. The size of a word varies across different systems, and common word lengths are:
 \begin{itemize}
 	\item 4 bits
@@ -314,7 +313,7 @@ The most compact way to represent a single bit is by writing it as either \textt
 	\item 32 bits = 4 bytes = 1 long
 \end{itemize}
 In most modern computers, data is grouped in multiples of 8 bits, but smaller systems (like microcontrollers) may use shorter word sizes, such as 4 bits (called a \textbf{nibble}). In practice, bit patterns are typically written in full bytes, even if only some of the bits are actually used.\\\\
-\paragraph{How to Distinguish Binary Patterns}
+\textbf{How to Distinguish Binary Patterns}\\\\
 Since binary patterns can easily be confused with numbers, there are several ways to indicate that a value is in binary format. For example, the binary pattern \texttt{1101} can be written in different ways to show that it is a binary number:
 \begin{itemize}
 	\item \texttt{1101B}
@@ -335,7 +334,7 @@ In computing, data is represented in binary, which means it is expressed using o
 	\item \textbf{Bit:} A \textbf{bit} is the smallest unit of data in a computer. It represents a binary digit, either 0 or 1.
 	\item \textbf{Byte:} A \textbf{byte} consists of 8 bits. It is the smallest addressable unit of memory in many computer architectures.
 \end{itemize}
-\paragraph{Units of Digital Information}
+\textbf{Units of Digital Information}
 The table below shows common units of digital information used in computing, their values, and common uses.
 
 \begin{table}[h]
@@ -357,7 +356,9 @@ The table below shows common units of digital information used in computing, the
 		\textbf{Exabyte}   & \texttt{EB}     & $2^{60}$ bytes                \\ \hline
 	\end{tabular}
 \end{table}
-\paragraph{Bit and Byte Usage in Computing}
+
+\textbf{Bit and Byte Usage in Computing}
+
 Bits and bytes serve different purposes in computer systems:
 
 \begin{itemize}
@@ -365,7 +366,7 @@ Bits and bytes serve different purposes in computer systems:
 	\item \textbf{Bytes} are used to represent data storage sizes, such as the size of files on your hard drive or the capacity of memory storage devices.
 \end{itemize}
 
-\paragraph{Common Usage Examples:}
+\textbf{Common Usage Examples:}
 
 \begin{itemize}
 	\item \textbf{56 Kbps:} Kilobit per second (Kbps) is often used to express slower data rates, such as a dial-up internet connection.
@@ -378,7 +379,7 @@ Bits and bytes serve different purposes in computer systems:
 
 \subsubsection{Data Compression}
 
-\paragraph{What is Data Compression?}
+\textbf{What is Data Compression?}\\
 Data compression is the process of reducing the size of digital data to save storage space or decrease transmission time over networks. By reducing the number of bits required to store or transmit information, compression allows for more efficient use of storage and faster data transfers.
 \begin{itemize}
 	\item \textbf{Data compression} refers to any technique that recodes data in such a way that it contains fewer bits than the original format.
@@ -390,8 +391,7 @@ Data compression is the process of reducing the size of digital data to save sto
 	\item \textbf{Reduces file size:} Compressed files take up less disk space, which allows users to store more data.
 	\item \textbf{Faster transmission times:} Smaller file sizes reduce the time it takes to transfer files over a network or the internet.
 \end{itemize}
-
-\paragraph{Types of Data Compression}
+\textbf{Types of Data Compression}\\\\
 Data compression techniques are generally divided into two main categories: \textbf{lossless} and \textbf{lossy} compression.\\\\
 \textbf{1. Lossless Compression}\\\\
 \textbf{Lossless compression} is a method of compressing data such that, when decompressed, the data is identical to the original. No data is lost during the compression process, making it ideal for text files, executable programs, and other sensitive data where accuracy is crucial.
@@ -433,33 +433,23 @@ The process of returning a compressed file to its original state is called \text
 	Computers and Their Applications}\\
 \subsubsection*{Number Representation and Bit Models}
 
-In digital systems, all forms of data—whether numbers, text, images, or other formats—are ultimately represented numerically. Specifically, computers use sequences of binary digits (0s and 1s) to store and interpret data. Understanding how data is stored, represented, and converted is essential for anyone working with computers.
+In digital systems, all data—whether numbers, text, images, or other formats—must be stored and represented numerically. Essentially, every piece of information breaks down to sequences of ones and zeros (binary). Understanding how this data is stored and interpreted is essential for working with computers.
 
 Consider the binary sequence:
 \[
 01000011 \ 01001111 \ 01010111
 \]
-This sequence can be interpreted in several different ways depending on the context:
+This sequence can be interpreted in multiple ways depending on the context:
 \begin{itemize}
-	\item As three individual integers: \(67, 79, 87\)
-	\item As a large number: \(4,411,223_{10}\)
-	\item As an ASCII word: \texttt{COW}
-	\item As a color (in the RGB format)
+	\item As three unique integers: \(67, 79, 87\)
+	\item As a large number: \(4,411,223\)
+	\item As a word: \texttt{COW}
+	\item As a color (in RGB format)
 \end{itemize}
-This highlights the importance of the context in which binary data is interpreted. The same binary sequence can represent numbers, characters, or other forms of data.
+Thus, how we interpret binary data depends on the application and context.
 
-\paragraph*{Number Systems}
-
-Computers use various number systems to represent data. The most common number systems are:
-
-\begin{itemize}
-	\item \textbf{Binary (Base-2)}: The simplest number system, consisting only of 0s and 1s.
-	\item \textbf{Octal (Base-8)}: A number system with digits from 0 to 7.
-	\item \textbf{Decimal (Base-10)}: The system humans most commonly use, consisting of digits 0 to 9.
-	\item \textbf{Hexadecimal (Base-16)}: A system with digits 0 to 9 and letters A to F, often used to represent large binary numbers more compactly.
-\end{itemize}
-
-\noindent Here is a table summarizing these number systems:
+\textbf*{Number Systems}
+Computers use several number systems to represent data, such as \textbf{Binary}, \textbf{Octal}, \textbf{Decimal}, and \textbf{Hexadecimal}. While humans typically use the decimal (base-10) system, computers prefer binary (base-2). Here's a comparison of these systems with examples:
 
 \[
 \begin{array}{|c|c|c|c|}
@@ -474,13 +464,10 @@ Computers use various number systems to represent data. The most common number s
 \end{array}
 \]
 
-\paragraph*{Example Conversions}
+\textbf*{Example Conversions}
+Let's consider the binary number \(1001101_2\). We'll calculate its decimal, octal, and hexadecimal values.
 
-Let’s consider the binary number \(1001101_2\) and convert it to decimal, octal, and hexadecimal.
-
-\paragraph*{1. Binary to Decimal}
-The decimal value of a binary number can be calculated by summing the powers of 2 for each digit position where there is a \(1\). For \(1001101_2\), we calculate:
-
+\textbf*{1. Binary to Decimal}
 \[
 1001101_2 = (1 \times 2^6) + (0 \times 2^5) + (0 \times 2^4) + (1 \times 2^3) + (1 \times 2^2) + (0 \times 2^1) + (1 \times 2^0)
 \]
@@ -488,20 +475,20 @@ The decimal value of a binary number can be calculated by summing the powers of 
 = 64 + 8 + 4 + 1 = 77_{10}
 \]
 
-\paragraph*{2. Binary to Octal}
-To convert binary to octal, group the binary digits in sets of three, starting from the right. Then convert each group to its octal equivalent:
+\textbf*{2. Binary to Octal}
+Group the binary number in sets of three bits, starting from the right:
 \[
 1001101_2 \rightarrow 001 \ 001 \ 101 = 1 \ 1 \ 5 = 115_8
 \]
 
-\paragraph*{3. Binary to Hexadecimal}
-For binary to hexadecimal, group the binary digits in sets of four, starting from the right, and convert each group to its hexadecimal equivalent:
+\textbf*{3. Binary to Hexadecimal}
+Group the binary number in sets of four bits, starting from the right:
 \[
 1001101_2 \rightarrow 0100 \ 1101 = 4 \ D = 4D_{16}
 \]
 
-\paragraph*{Base Conversion Table}
-The following table shows conversions between binary, decimal, octal, and hexadecimal for the first few numbers. This helps illustrate the relationships between these number systems:
+\textbf*{Base Conversion Table}
+Here’s a comprehensive table showing the conversion of a binary number to decimal, octal, and hexadecimal, and vice versa. This table includes the first few numbers to help you understand the conversions better.
 
 \[
 \begin{array}{|c|c|c|c|}
@@ -528,38 +515,37 @@ The following table shows conversions between binary, decimal, octal, and hexade
 \end{array}
 \]
 
-\paragraph*{Conversions Between Number Systems}
+\textbf*{Conversions Between Number Systems}
 
-Now, let's detail how to convert between different number systems.
-
-\paragraph*{1. Binary to Decimal}
-The binary-to-decimal conversion can be performed using the following formula:
+\textbf*{1. Binary to Decimal}
+To convert a binary number to decimal, use the following formula:
 \[
 \text{Decimal Value} = (b_n \times 2^n) + (b_{n-1} \times 2^{n-1}) + \cdots + (b_1 \times 2^1) + (b_0 \times 2^0)
 \]
 Where \(b_i\) represents each binary digit.
 
-\paragraph*{2. Decimal to Binary}
-To convert decimal to binary, repeatedly divide the decimal number by 2, noting the remainders. The binary equivalent is obtained by reading the remainders in reverse order.
+\textbf*{2. Decimal to Binary}
+To convert decimal to binary, repeatedly divide the decimal number by 2 and note the remainders. The binary equivalent is obtained by reading the remainders in reverse.
 
-\paragraph*{3. Hexadecimal to Binary}
+\textbf*{3. Hexadecimal to Binary}
 Each hexadecimal digit corresponds to exactly four binary digits. For example:
 \[
 A_{16} = 1010_2, \quad B_{16} = 1011_2
 \]
-So, converting \(4B_{16}\) to binary gives:
+So, converting \(0x4B_{16}\) to binary gives:
 \[
 4B_{16} = 0100 \ 1011_2 = 1001011_2
 \]
 
-\paragraph*{4. Octal to Binary}
+\textbf*{4. Octal to Binary}
 Each octal digit corresponds to three binary digits. For example:
 \[
 7_8 = 111_2, \quad 3_8 = 011_2
 \]
 
-\paragraph*{Example in C (Number Representation)}
-The following C code demonstrates how numbers in different bases can be represented in C:
+\textbf*{Example in C (Number Representation)}
+
+The following C code demonstrates how different base values can be represented in C:
 
 \begin{lstlisting}[language=C]
 	#include <stdio.h>
@@ -574,10 +560,9 @@ The following C code demonstrates how numbers in different bases can be represen
 		return 0;
 	}
 \end{lstlisting}
-This program outputs the decimal equivalents of values represented in octal, hexadecimal, and binary.\\
-\textbf{Note:} The definitions and explanations in this section are collected from various authoritative sources. Full references to these sources are provided to acknowledge the original authors. For further reading, you can access the full text at the following link: 
-\[\text{LINKS:}\]
-\href{https://people.scs.carleton.ca/~claurend/Courses/COMP2401/Notes/COMP2401_Ch2_DataRepresentation.pdf}{Data Representation}\\
+
+This program outputs the decimal equivalents of different base representations.
+
 \subsubsection{ELEMENTS OF	INFORMATION THEORY}
 
 \subsubsection{Shannon's Entropy and Information Content}
