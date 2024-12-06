@@ -19,12 +19,6 @@
 [submodule "SQL-DeepDiveLearning"]
 	path = SQL-DeepDiveLearning
 	url = https://github.com/m-mdy-m/SQL-DeepDiveLearning
-[submodule "m-debugging"]
-	path = m-debugging
-	url = https://github.com/Testing-Guild/m-debugging.git
-[submodule "m-testing"]
-	path = m-testing
-	url = https://github.com/Testing-Guild/m-testing.git
 [submodule "SPathways"]
 	path = SPathways
 	url = https://github.com/m-mdy-m/SPathways.git
